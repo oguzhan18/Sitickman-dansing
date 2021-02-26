@@ -1,0 +1,112 @@
+body{margin-left:200px; margin-top:200px;}
+body:hover{background-color: #f6f6f6;}
+.la{
+      margin-left:40; margin-top:-70px; width:50px; height:10px;
+      position:fixed;
+      background:rgb(175, 15, 15); border-radius:2px;
+ -ms-transform: rotate(280deg);
+    -webkit-transform: rotate(20deg);
+    transform: rotate(280deg);
+    
+-webkit-animation: Leftarm 0.3s infinite;
+    -webkit-animation-direction: alternate; 
+    animation: Leftarm 0.3s infinite;
+    animation-direction: alternate; 
+}
+@-webkit-keyframes Leftarm{
+  0%{  margin-top:-100px; transform:rotate(90deg);}
+ 
+  100%{ margin-top:-76px; margin-left: 0px; transform:rotate(-40deg);}
+}
+
+
+.la:hover{background:rgb(175, 13, 13);
+margin-left:0px; margin-top:-90px;
+
+ -ms-transform: rotate(360deg); /* IE 9 */
+    -webkit-transform: rotate(20deg); /* Safari */
+    transform: rotate(360deg); /* Standard syntax */
+
+
+}
+
+.ra{
+margin-left:39px; margin-top:-70px; width:50px; height:10px;
+position:fixed;background:rgb(218, 23, 23); border-radius:2px;
+ -ms-transform: rotate(80deg); /* IE 9 */
+    -webkit-transform: rotate(20deg); /* Safari */
+    transform: rotate(80deg); /* Standard syntax */
+  -webkit-animation: Rightarm 0.2s infinite; /* Safari 4.0 - 8.0 */
+    -webkit-animation-direction: alternate; /* Safari 4.0 - 8.0 */
+    animation: Rightarm 0.2s infinite;
+    animation-direction: alternate; 
+}
+@-webkit-keyframes Rightarm{
+  0%{  margin-top:-100px; transform:rotate(-90deg);}
+ 
+  100%{ margin-top:-76px; margin-left: 45px; transform:rotate(40deg);}
+}
+
+
+
+.ra:hover{background:rgb(160, 13, 13);
+margin-top:-90px;
+ -ms-transform: rotate(0deg); /* IE 9 */
+    -webkit-transform: rotate(20deg); /* Safari */
+    transform: rotate(0deg); /* Standard syntax */
+}
+
+.rl{
+margin-left:50px; margin-top:-50px; width:10px; height:50px;
+background:rgb(197, 11, 11); border-radius:2px; position:fixed;
+-webkit-animation: Rightleg 0.4s infinite; /* Safari 4.0 - 8.0 */
+    -webkit-animation-direction: alternate; /* Safari 4.0 - 8.0 */
+    animation: Rightleg 0.4s infinite;
+    animation-direction: alternate; 
+}
+@-webkit-keyframes Rightleg{
+  0%{ margin-top: -60px; transform:rotate(-90deg);}
+  25%{margin-top: -60px; transform:rotate(-70deg);}
+  100%{margin-top: -50px; transform:rotate(10deg);}
+}
+
+.rl:hover{height:60px;}
+.ll{
+margin-left:30px; margin-top:-50px; width:10px; height:50px;background:rgb(145, 18, 18); border-radius:2px;
+position:fixed;
+  -webkit-animation: Leftleg 0.2s infinite; /* Safari 4.0 - 8.0 */
+    -webkit-animation-direction: alternate; /* Safari 4.0 - 8.0 */
+    animation: Leftleg 0.2s infinite;
+    animation-direction: alternate; 
+}
+@-webkit-keyframes Leftleg{
+  0%{ margin-top: -60px; transform:rotate(90deg);}
+  25%{margin-top: -60px; transform:rotate(70deg);}
+  100%{margin-top: -50px; transform:rotate(-10deg);}
+}
+
+.ll:hover{height:60px;}
+.h{margin-left:35px; margin-top:-110px; width:20px; height:20px; border-radius:9px;
+position:fixed;background:rgb(177, 24, 24);
+}
+
+.h:hover{border-radius:1px;
+
+
+ -ms-transform: rotate(42deg); /* IE 9 */
+    -webkit-transform: rotate(20deg); /* Safari */
+    transform: rotate(42deg); /* Standard syntax */
+
+
+
+
+}
+.bdy{margin-left:30px; margin-top:-90px; width:30px; height:60px;
+position:fixed;background:rgb(175, 14, 14)}
+
+.bdy:hover{ height:70px;}
+
+.one{border: 1px solid rgb(187, 32, 32); width:50px; height: 50px; margin-top:200px;}
+.two{border: 1px solid rgb(184, 24, 24); width:50px; height: 50px; margin-left:20px; margin-top:-90px;}
+
+.rl, .ll, .bdy, .la, .ra, .h{transition: 0.2s;}
